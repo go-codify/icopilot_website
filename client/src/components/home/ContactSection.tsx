@@ -112,7 +112,7 @@ const ContactSection = () => {
                       </div>
                       <div className="ml-4">
                         <h4 className="text-lg font-medium mb-1">Email</h4>
-                        <p className="text-slate-300">info@icopilot.in</p>
+                        <p className="text-slate-300">vasanth@icopilot.in</p>
                       </div>
                     </div>
                     
@@ -123,7 +123,7 @@ const ContactSection = () => {
                       <div className="ml-4">
                         <h4 className="text-lg font-medium mb-1">Location</h4>
                         <p className="text-slate-300">
-                          123 Tech Park Drive<br />San Francisco, CA 94107
+                          T2-301, Sattva Misty Charm, Off Holiday Village,<br />Kanakapura Road, Bengaluru, Karnataka 560109
                         </p>
                       </div>
                     </div>

@@ -2,7 +2,10 @@ import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Card, CardContent } from "@/components/ui/card";
-import { Server, Code, Package, Terminal, Cloud, Shield, ShieldCheck, Cog, Database } from "lucide-react";
+import { 
+  Server, Code, Package, Terminal, Cloud, Shield, ShieldCheck, Cog, Database,
+  Briefcase, Headphones, DollarSign, BarChart4, HardDrive, Layers
+} from "lucide-react";
 
 const Services = () => {
   useEffect(() => {
@@ -38,12 +41,12 @@ const Services = () => {
     },
     {
       title: "Platform Engineering as a Service",
-      description: "Build self-service developer platforms that boost productivity, standardize workflows, and ensure security across your organization.",
+      description: "Build advanced self-service developer portals that provide a unified interface for developers, public cloud, and on-premise infrastructure consumers.",
       icon: <Package className="w-6 h-6 text-purple-500" />,
       color: "bg-purple-500/20",
       benefits: [
-        "Create self-service developer portals",
-        "Standardize infrastructure components",
+        "Create unified self-service developer portals",
+        "Connect developers with both cloud and on-premise infrastructure",
         "Enforce security policies and governance",
         "Reduce cognitive load on development teams",
         "Enable innovation through abstraction"
@@ -51,28 +54,67 @@ const Services = () => {
     },
     {
       title: "Internal Developer Platforms",
-      description: "Create customized platforms that abstract infrastructure complexity and provide self-service capabilities for your development teams.",
+      description: "Create a unified IDP that serves as a common platform for developers, public cloud, and on-premise consumers through a powerful self-service portal.",
       icon: <Terminal className="w-6 h-6 text-primary" />,
       color: "bg-primary/20",
       benefits: [
-        "Abstract away infrastructure complexity",
-        "Enable developer self-service",
-        "Standardize deployment patterns",
+        "Unify access to both cloud and on-premise resources",
+        "Empower developers with self-service capabilities",
+        "Standardize deployment patterns across environments",
         "Improve developer experience and productivity",
-        "Maintain central governance and control"
+        "Maintain central governance and security controls"
       ]
     },
     {
       title: "Cosmos - VMware Alternative",
-      description: "Our cost-optimized virtualization platform based on Proxmox hypervisor with enhanced self-service capabilities to minimize manual errors for IT teams.",
+      description: "Our cost-optimized virtualization platform based on Proxmox hypervisor and Kubernetes for container orchestration with enhanced self-service capabilities.",
       icon: <Database className="w-6 h-6 text-indigo-500" />,
       color: "bg-indigo-500/20",
       benefits: [
         "Significant cost savings compared to VMware",
+        "Kubernetes-based container orchestration",
         "Self-service portal for IT operations teams",
         "Minimize errors from manual changes",
-        "Simplify infrastructure management",
-        "Enhance operational efficiency through automation"
+        "Enhanced scalability and deployment flexibility"
+      ]
+    },
+    {
+      title: "Cloudera & Datalake Solutions",
+      description: "Expert implementation and consulting services for Cloudera and data lake architectures, helping you harness the power of your big data ecosystem.",
+      icon: <HardDrive className="w-6 h-6 text-blue-500" />,
+      color: "bg-blue-500/20",
+      benefits: [
+        "Optimize big data processing and analytics",
+        "Implement scalable data lake architectures",
+        "Enable real-time data processing pipelines",
+        "Improve data governance and security",
+        "Enhance data-driven decision making capabilities"
+      ]
+    },
+    {
+      title: "Database Migration Services",
+      description: "Seamless migration of your databases across different platforms, ensuring data integrity, minimal downtime, and optimized performance.",
+      icon: <Layers className="w-6 h-6 text-cyan-500" />,
+      color: "bg-cyan-500/20",
+      benefits: [
+        "Migrate between different database technologies",
+        "Minimize downtime during migrations",
+        "Ensure data integrity throughout the process",
+        "Optimize database performance post-migration",
+        "Implement robust testing and validation procedures"
+      ]
+    },
+    {
+      title: "Cloud Cost Optimization",
+      description: "Identify and eliminate cloud waste, right-size resources, and implement FinOps best practices to significantly reduce your cloud spending.",
+      icon: <DollarSign className="w-6 h-6 text-green-500" />,
+      color: "bg-green-500/20",
+      benefits: [
+        "Reduce monthly cloud expenses by 20-40%",
+        "Implement automated resource scheduling",
+        "Right-size over-provisioned resources",
+        "Set up cost allocation and chargeback models",
+        "Create cloud spending dashboards and alerts"
       ]
     },
     {
@@ -112,6 +154,32 @@ const Services = () => {
         "Modernize legacy applications",
         "Enable remote work capabilities",
         "Leverage cloud-native services"
+      ]
+    },
+    {
+      title: "IT Consulting & Advisory",
+      description: "Expert guidance on IT infrastructure strategy, technology selection, and implementation roadmaps tailored to your business objectives.",
+      icon: <Briefcase className="w-6 h-6 text-amber-500" />,
+      color: "bg-amber-500/20",
+      benefits: [
+        "Receive expert guidance from seasoned IT professionals",
+        "Align technology decisions with business objectives",
+        "Create strategic IT roadmaps and implementation plans",
+        "Navigate complex vendor selection processes",
+        "Optimize existing infrastructure investments"
+      ]
+    },
+    {
+      title: "Professional Services",
+      description: "Specialized implementation support with hands-on expertise across multiple platforms and technologies to ensure successful project delivery.",
+      icon: <Headphones className="w-6 h-6 text-red-500" />,
+      color: "bg-red-500/20",
+      benefits: [
+        "Access specialized technical expertise on-demand",
+        "Accelerate implementation of complex technologies",
+        "Supplement in-house teams during critical projects",
+        "Ensure proper knowledge transfer to internal teams",
+        "Receive ongoing support and troubleshooting assistance"
       ]
     },
     {

@@ -1,6 +1,10 @@
 import { useRef, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { ChevronRight, Server, Code, Package, Terminal, Cloud, Shield, ShieldCheck, Cog, Database } from "lucide-react";
+import { 
+  ChevronRight, Server, Code, Package, Terminal, Cloud, 
+  Shield, ShieldCheck, Cog, Database, Briefcase, Headphones,
+  DollarSign, BarChart4, HardDrive, Layers
+} from "lucide-react";
 import { Link } from "wouter";
 
 interface ServiceCardProps {
@@ -50,21 +54,39 @@ const ServicesSection = () => {
     },
     {
       title: "Platform Engineering as a Service",
-      description: "Build self-service developer platforms that boost productivity, standardize workflows, and ensure security across your organization.",
+      description: "Build advanced self-service developer portals that provide a unified interface for developers, public cloud, and on-premise infrastructure consumers.",
       icon: <Package className="w-6 h-6 text-purple-500" />,
       color: "bg-purple-500/20",
     },
     {
-      title: "Cosmos - VMware Alternative",
-      description: "Our cost-optimized virtualization platform based on Proxmox hypervisor with enhanced self-service capabilities to minimize manual errors for IT teams.",
+      title: "Kubernetes Virtualization",
+      description: "Our cost-optimized virtualization platform based on Kubernetes for container orchestration as an alternative to VMware with enhanced self-service capabilities.",
       icon: <Database className="w-6 h-6 text-indigo-500" />,
       color: "bg-indigo-500/20",
     },
     {
       title: "Internal Developer Platforms",
-      description: "Create customized platforms that abstract infrastructure complexity and provide self-service capabilities for your development teams.",
+      description: "Create a unified IDP that serves as a common platform for developers, public cloud, and on-premise consumers through a powerful self-service portal.",
       icon: <Terminal className="w-6 h-6 text-primary" />,
       color: "bg-primary/20",
+    },
+    {
+      title: "Cloudera & Datalake Solutions",
+      description: "Expert implementation and consulting services for Cloudera and data lake architectures, helping you harness the power of your big data ecosystem.",
+      icon: <HardDrive className="w-6 h-6 text-blue-500" />,
+      color: "bg-blue-500/20",
+    },
+    {
+      title: "Database Migration Services",
+      description: "Seamless migration of your databases across different platforms, ensuring data integrity, minimal downtime, and optimized performance.",
+      icon: <Layers className="w-6 h-6 text-cyan-500" />,
+      color: "bg-cyan-500/20",
+    },
+    {
+      title: "Cloud Cost Optimization",
+      description: "Identify and eliminate cloud waste, right-size resources, and implement FinOps best practices to significantly reduce your cloud spending.",
+      icon: <DollarSign className="w-6 h-6 text-green-500" />,
+      color: "bg-green-500/20",
     },
     {
       title: "DC DR Strategy & Implementation",
@@ -83,6 +105,18 @@ const ServicesSection = () => {
       description: "Seamlessly migrate your applications and infrastructure to the cloud with our expert guidance and proven methodologies.",
       icon: <Cloud className="w-6 h-6 text-green-500" />,
       color: "bg-green-500/20",
+    },
+    {
+      title: "IT Consulting & Advisory",
+      description: "Expert guidance on IT infrastructure strategy, technology selection, and implementation roadmaps tailored to your business objectives.",
+      icon: <Briefcase className="w-6 h-6 text-amber-500" />,
+      color: "bg-amber-500/20",
+    },
+    {
+      title: "Professional Services",
+      description: "Specialized implementation support with hands-on expertise across multiple platforms and technologies to ensure successful project delivery.",
+      icon: <Headphones className="w-6 h-6 text-red-500" />,
+      color: "bg-red-500/20",
     },
     {
       title: "Landing Zone Services",

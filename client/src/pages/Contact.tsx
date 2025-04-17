@@ -47,7 +47,7 @@ const Contact = () => {
                   <Mail className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Email</h3>
-                <p className="text-slate-300">info@icopilot.in</p>
+                <p className="text-slate-300">vasanth@icopilot.in</p>
                 <p className="text-slate-400 text-sm">We respond within 24 hours</p>
               </CardContent>
             </Card>
@@ -59,8 +59,8 @@ const Contact = () => {
                 </div>
                 <h3 className="text-xl font-bold mb-2">Office</h3>
                 <p className="text-slate-300">
-                  123 Tech Park Drive<br />
-                  San Francisco, CA 94107
+                  T2-301, Sattva Misty Charm, Off Holiday Village,<br />
+                  Kanakapura Road, Bengaluru, Karnataka 560109
                 </p>
               </CardContent>
             </Card>
