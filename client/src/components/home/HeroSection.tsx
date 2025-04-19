@@ -2,6 +2,7 @@ import { useRef, useEffect } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ChevronDown, ArrowRight } from "lucide-react";
+import DevSecOpsDiagram from "./DevSecOpsDiagram";
 
 const HeroSection = () => {
   const particlesRef = useRef<HTMLDivElement>(null);
@@ -80,11 +81,11 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 py-16 relative z-10">
         <div className="max-w-3xl mx-auto md:mx-0">
           <div className="animate-in fade-in slide-in-from-bottom-5 duration-700">
-            <span className="inline-block px-3 py-1 text-sm font-medium rounded-full bg-primary/20 text-primary mb-4">
+            <span className="inline-block px-4 py-2 text-sm font-semibold rounded-full bg-white/90 text-blue-700 mb-4 shadow-md">
               Infrastructure Automation Experts
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-white">
-              Modernize Your IT Infrastructure with <span className="text-primary">iCopilot</span>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-white">
+              Modernize Your IT Infrastructure with <span className="text-white bg-blue-600 px-2 rounded">iCopilot</span>
             </h1>
             <p className="text-xl text-slate-100 leading-relaxed mb-8">
               Accelerate your digital transformation with our DevOps as a Service, Platform Engineering, and cloud migration expertise.
@@ -113,57 +114,11 @@ const HeroSection = () => {
                 <span className="block w-3 h-3 rounded-full bg-yellow-500"></span>
                 <span className="block w-3 h-3 rounded-full bg-green-500"></span>
               </div>
-              <div className="ml-4 text-sm font-mono text-slate-400">infrastructure-as-code.yml</div>
+              <div className="ml-4 text-sm font-medium text-slate-300">DevSecOps CI/CD Pipeline</div>
             </div>
-            <pre className="bg-slate-800/50 text-sm p-4 rounded-md overflow-x-auto font-mono">
-              <div className="text-slate-400"># iCopilot Infrastructure as Code Example</div>
-              <div>
-                <span className="text-blue-400">resource</span> <span className="text-purple-400">"aws_ecs_cluster"</span> <span className="text-slate-200">"main"</span> {'{'}
-              </div>
-              <div>
-                <span className="text-green-400 ml-2">name</span> = <span className="text-slate-200">"app-cluster"</span>
-              </div>
-              <div>
-                <span className="text-green-400 ml-2">capacity_providers</span> = [<span className="text-slate-200">"FARGATE"</span>, <span className="text-slate-200">"FARGATE_SPOT"</span>]
-              </div>
-              <div>
-                <span className="text-green-400 ml-2">default_capacity_provider_strategy</span> {'{'}
-              </div>
-              <div>
-                <span className="text-green-400 ml-4">capacity_provider</span> = <span className="text-slate-200">"FARGATE"</span>
-              </div>
-              <div>
-                <span className="text-green-400 ml-4">weight</span> = <span className="text-slate-200">1</span>
-              </div>
-              <div>
-                <span className="ml-2">{'}'}</span>
-              </div>
-              <div>
-                <span className="text-green-400 ml-2">setting</span> {'{'}
-              </div>
-              <div>
-                <span className="text-green-400 ml-4">name</span> = <span className="text-slate-200">"containerInsights"</span>
-              </div>
-              <div>
-                <span className="text-green-400 ml-4">value</span> = <span className="text-slate-200">"enabled"</span>
-              </div>
-              <div>
-                <span className="ml-2">{'}'}</span>
-              </div>
-              <div>
-                <span className="text-green-400 ml-2">tags</span> = {'{'}
-              </div>
-              <div>
-                <span className="text-green-400 ml-4">Environment</span> = <span className="text-slate-200">"production"</span>
-              </div>
-              <div>
-                <span className="text-green-400 ml-4">Terraform</span> = <span className="text-slate-200">"true"</span>
-              </div>
-              <div>
-                <span className="ml-2">{'}'}</span>
-              </div>
-              <div>{'}'}</div>
-            </pre>
+            <div className="bg-slate-800/60 rounded-md overflow-x-auto">
+              <DevSecOpsDiagram />
+            </div>
           </div>
         </div>
       </div>

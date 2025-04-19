@@ -10,4 +10,197 @@
   body {
     @apply font-sans antialiased bg-background text-foreground;
   }
+  
+  /* Color palette enhancements for both themes */
+  :root {
+    --primary-rgb: 59, 130, 246;
+  }
+  
+  /* Improved light mode text colors - darker for better contrast */
+  :root.light {
+    --slate-300: #374151; /* Darker than before */
+    --slate-400: #1f2937; /* Darker than before */
+    --slate-700: #e5e7eb; /* Lighter for borders */
+    --slate-800: #f3f4f6; /* Lighter for backgrounds */
+    --slate-900: #ffffff; /* White for backgrounds */
+  }
+
+  /* Enhanced dark mode colors - better contrast */
+  :root.dark {
+    --slate-300: #e5e7eb; /* Lighter for better visibility */
+    --slate-400: #d1d5db; /* Lighter for better visibility */
+    --primary: #60a5fa;   /* Brighter blue */
+  }
+}
+
+/* ==================== LIGHT THEME STYLES ==================== */
+
+/* Text color overrides for better visibility in light mode */
+.light .text-slate-200,
+.light .text-slate-300 {
+  color: #374151 !important; /* Darker gray for better contrast */
+}
+
+.light .text-slate-400 {
+  color: #1f2937 !important; /* Even darker gray for secondary text */
+}
+
+/* Background colors for light mode */
+.light .bg-slate-800 {
+  background-color: #f3f4f6 !important;
+}
+
+.light .bg-slate-900 {
+  background-color: #ffffff !important;
+}
+
+.light .border-slate-700 {
+  border-color: #e5e7eb !important;
+}
+
+/* Header styling for light mode */
+.light header .bg-slate-900\/90 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+}
+
+.light header .text-slate-200 {
+  color: #1f2937 !important;
+}
+
+/* Service section fixes for light mode */
+.light #services.bg-slate-800 {
+  background-color: #f9fafb !important;
+}
+
+/* Card styling in light mode */
+.light .card,
+.light .bg-slate-800,
+.light .bg-slate-900 {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+/* Dropdown menu fixes for light mode */
+.light .bg-slate-800.border-slate-700 {
+  background-color: #ffffff !important;
+  border-color: #e5e7eb !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.light .hover\:bg-slate-700:hover {
+  background-color: #f3f4f6 !important;
+}
+
+/* Footer styling for light mode - keep dark for contrast */
+.light footer.bg-slate-900 {
+  background-color: #1f2937 !important;
+}
+
+.light footer .text-slate-300,
+.light footer .text-slate-400 {
+  color: #e5e7eb !important; /* Light text on dark footer background */
+}
+
+/* Button styling for light mode */
+.light .btn-primary {
+  background-color: #2563eb !important;
+  color: white !important;
+}
+
+.light .bg-primary\/20 {
+  background-color: rgba(37, 99, 235, 0.1) !important;
+  color: #2563eb !important;
+}
+
+/* ==================== DARK THEME ENHANCEMENTS ==================== */
+
+/* Improve visibility of text in dark mode */
+.dark .text-slate-300 {
+  color: #e5e7eb !important; /* Lighter for better visibility */
+}
+
+.dark .text-slate-400 {
+  color: #d1d5db !important; /* Lighter for better visibility */
+}
+
+/* Make primary color more vibrant in dark mode */
+.dark .text-primary {
+  color: #60a5fa !important; /* Brighter blue */
+}
+
+.dark .bg-primary\/20 {
+  background-color: rgba(96, 165, 250, 0.2) !important;
+}
+
+/* Enhance blue colored icons and elements in dark mode */
+.dark .text-blue-500 {
+  color: #3b82f6 !important; /* Brighter blue */
+}
+
+.dark .bg-blue-500\/20 {
+  background-color: rgba(59, 130, 246, 0.3) !important; /* More vibrant */
+}
+
+.dark .text-indigo-500 {
+  color: #6366f1 !important; /* Brighter indigo */
+}
+
+.dark .bg-indigo-500\/20 {
+  background-color: rgba(99, 102, 241, 0.3) !important; /* More vibrant */
+}
+
+.dark .text-cyan-500 {
+  color: #06b6d4 !important; /* Brighter cyan */
+}
+
+.dark .bg-cyan-500\/20 {
+  background-color: rgba(6, 182, 212, 0.3) !important; /* More vibrant */
+}
+
+/* Enhance card visibility */
+.dark .bg-slate-900 {
+  background-color: #111827 !important; /* Slightly lighter than default */
+}
+
+.dark .bg-slate-800 {
+  background-color: #1f2937 !important; /* Slightly lighter than default */
+}
+
+/* Improve service cards in dark mode */
+.dark .bg-slate-900.rounded-lg {
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Enhance service card hover effect */
+.dark .hover\:border-primary\/50:hover {
+  border-color: rgba(96, 165, 250, 0.5) !important;
+  box-shadow: 0 10px 15px -3px rgba(96, 165, 250, 0.2), 0 4px 6px -2px rgba(96, 165, 250, 0.1) !important;
+}
+
+/* DevSecOps Diagram animations */
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 10s linear infinite;
+}
+
+@keyframes pulse-slow {
+  0% { box-shadow: 0 0 0 0 rgba(234, 179, 8, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(234, 179, 8, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(234, 179, 8, 0); }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 2s infinite;
+}
+
+/* Improve button contrast */
+.dark .btn-primary,
+.dark button[type="submit"] {
+  background-color: #3b82f6 !important;
+  color: white !important;
 }
